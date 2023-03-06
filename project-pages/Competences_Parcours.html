@@ -69,8 +69,7 @@
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
         <div class="main-title">Mon parcours / Mes compétences</div>
-        <div class="body-text"> Reproduction de créations artistiques sur 3DS MAX en s'appuyant uniquement de photos de référence.
-          Mes réalisations été ensuite mise en commun avec mon groupe de travail pour ensuite les mettre dans un musée virtuel.
+        <div class="body-text"> Dans cette section : vous trouverez mes compétences avec les logiciels/langages de programmation utilisés.
         </div>
         <image class="project-header-image" src="../assets/images/COMPETENCES.jpg">
       </div>
@@ -83,91 +82,73 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Détails du projet / Mon rôle</div>
+
+        <a class="button" href="../assets/CV/CV_Animateur_3D_V3.pdf" download="CV_Animateur_3D_V3">
+          <span class="button-text">Téléchargement de mon CV</span>
+        </a>
+
+        <div class="subheader-text">Programmation  :</div>
+        <div>
+          <img src="../assets/images/C++Better.jpg" width="600">
+        </div>
         <div class="project-details-content">
-          <div class="body-text">Ce projet fut long. Nous avons une semaine pour créer entre 3 et 4 oeuvres d'art.
-            On avait une selection de plusieurs d'oeuvres d'art qu'on pouvait reproduire.
+          <div class="body-text"><strong> C++ avec Visual Studio </strong> <br>
+            Utilisés majoritairement en programmation orientés objets dans des projets divers et variés telles que transformation de d'image en ASCII art. 
           </div>
-          <div class="body-text"> De mon côté, j'essaie de trouver un équilibre entre les différentes d'oeuvres d'art : une facile avec une difficile.
-            Toutes les reproductions ont suivi le même processus de création : récupération de photo et mis en place pour avoir des références. -Etude des images pour connaître la forme de l'oeuvre.
-            -Reproduction/Production en s'appuyant des images.
+          <div class="subheader-text"> Jeu vidéo :</div>
+          <div>
+            <img src="../assets/images/JEUXVIDEO.jpg">
           </div>
-          <a class="button" href="https://github.com/MisterBulle/3DSMAX_R-alisation_Mus-e">
-            <span class="button-text">Téléchargement du CV</span>
-          </a>
+          <div class="body-text"> <strong>C# avec Unity : <br> </strong>
+            Création de nombreux jeux vidéos sous ce logiciel via des travaux pratiques. Des jeux crées en autonomie ou en groupe de plusieurs sur des périodes divers et variés.
+            Apprentissage de ce logiciel et de méthodes tels que les singletons et les game managers.
+            Création majoritairement de jeu en 2D (un seul en 3D en deuxième année).
+          </div>
+          <div class="body-text"> <strong>C++ avec Unreal Engine 5 : </strong> <br>
+            Logiciel utilisé pour le jeu en VR : Escape Le Puy : The Nightmare. Apprentissage de l'utilisation des blueprints 
+            et leurs implémentations dans le jeu.
+          </div>
+          <div class="subheader-text"> Modélisation 3D : </div>
+          <div>
+            <img src="../assets/images/BLENDERGOAT.jpg" width="600">
+          </div>
+          <div class="body-text"> <strong> Blender </strong> <br>
+            Apprentissage en auto-didacte de ce logiciel me permettant de modélisé différentes créations.
+          </div>
+          <div class="body-text"> <strong> 3DS MAX </strong> <br>
+            Appris dans ma formation à l'IUT Informatique du Puy-en-Velay : Créations d'oeuvres d'arts divers et variés en cours.
+          </div>
+          <div class="subheader-text"> Base de données : </div>
+          <div>
+            <img src="../assets/images/DATABASE.jpeg" width="600">
+          </div>
+          <div class="body-text"> <strong> MySQL </strong> <br>
+            Appris dans ma formation à l'IUT Informatique du Puy-en-Velay : Créations/Gestions et requête de la base de données.
+          </div>
         </div>
       </div>
-
       <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!-- 
-              TODO
-
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-              Full Width Image:
-
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/RequinCapture.PNG" class="gallery-image">
-              <span class="image-caption"><strong>Le requin de Philippe PASQUA : </strong> L'un des mes plus longues productions. La machoire à demandé un peu de travail ainsi que toute la rotation du requin.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/CountingNudePicture.PNG" class="gallery-image">
-              <span class="image-caption"><strong>Counting Nude de Moscovino : </strong> la première oeuvre qui a été crée pour le musée et l'un des plus complexes : en soit cet oeuvre était un origami : un pliage à l'avant avait des répercussions sur l'arrière, etc...
-                Ce qui peut devoir complexe en n'ayant pas l'objet sous les yeux pour pouvoir le manipuler.
-              </span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/CRANEFINAL.PNG" class="gallery-image">
-              <span class="image-caption"><strong>Avidité de Pasqua :</strong> Crée à partir d'un modèle existant et de papillon. Mon travail était plus centré sur un travail de composition et de déformation (pour le crâne).</span>
-            </div>
-        </div>
-      </div>
     </div>
 
     <!-- FOOTER -->
     <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/loic-pauvert/">
+        <image src="../assets/icons/LinkedInLogo.png" class="footer-icon"/>
       </a>
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
+      <a class="icon-link" target="_blank" href="https://github.com/MisterBulle">
+        <image id="github_image" src="../assets/icons/github.png" class="footer-icon"/>
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <a class="icon-link" href="mailto:loicpauvert47@gmail.com">
         <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
