@@ -13,6 +13,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F0F8FF;
 }
 
 
@@ -63,9 +64,13 @@ body {
 /* About Section */
 
 #about-section {
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   gap: 16px;
+
+  border: 1.5px solid black; /* ajouter une bordure de 2px de couleur noire */
+  padding: 30px; /* ajouter une marge intérieure de 10px pour espacer les images du bord de la bordure */
+  display: inline-block; /* afficher les div en lignes*/
 }
 
 .about-section-content {
@@ -89,6 +94,8 @@ body {
   display: flex;
   gap: 34px 16px;
   flex-wrap: wrap;
+
+  
 }
 
     /* Project Cards */
@@ -129,16 +136,28 @@ body {
   height: auto;
 }
 
+#Ajout
+.project-header-image-smaller {
+  width: 200px;
+  height: auto;
+}
+
 #project-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  border: 2px solid black; /* ajouter une bordure de 2px de couleur noire */
+  padding: 30px; /* ajouter une marge intérieure de 10px pour espacer les images du bord de la bordure */
+
+  
 }
 
 .project-details-content {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  
 }
 
     /* Project Gallery */
