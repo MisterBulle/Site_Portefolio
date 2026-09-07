@@ -22,13 +22,40 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  /* centre le contenu et limite la largeur maximale pour laisser plus
+     d'espace au texte tout en restant responsive */
+  margin: 225px auto;
+  max-width: 1200px;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   gap: 96px;
 }
 
 
+.container {
+  display : grid;
+  /*On a deux colonnes*/
+  grid-template-columns : auto auto;
+  /*grid-template-rows : auto;*/
+  grid-template-areas : "image text buttons";
+}
+
+.container div.image {
+  grid-area : image;
+}
+
+.container div.text {
+  grid-area : text;
+  text-align : center;
+}
+
+.container div.buttons {
+  grid-area : buttons;
+  display : flex;
+  justify-content : center;
+  gap : 5%;
+}
 
 
 /* Portfolio Header */
@@ -43,11 +70,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex-basis: 50%;
+  /* réduire légèrement la place de l'image pour laisser plus au texte */
+  flex-basis: 35%;
 }
 
 .portfolio-header-image {
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 
@@ -55,7 +83,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 34px;
-  flex-basis: 50%;
+  /* donner plus d'espace au bloc texte */
+  flex-basis: 60%;
 }
 
 
