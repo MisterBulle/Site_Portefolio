@@ -33,45 +33,68 @@ body {
 }
 
 
-.container {
-  display : grid;
-  /*On a deux colonnes*/
-  grid-template-columns : auto auto;
-  /*grid-template-rows : auto;*/
-  grid-template-areas : "image text buttons";
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "image text"
+    "buttons buttons";
+  
+  padding-bottom: 30px;
+
 }
 
-.container div.image {
+.intro-grid > .image {
   grid-area : image;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.container div.text {
+.intro-grid > .image .portfolio-header-image {
+  width: min(100%, 350px);
+}
+
+.intro-grid > .text {
   grid-area : text;
-  text-align : center;
+  /*Ajout de chat*/
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  justify-content: center;
 }
 
-.container div.buttons {
+.intro-grid > .buttons {
   grid-area : buttons;
   display : flex;
   justify-content : center;
-  gap : 5%;
+  align-items: center;
+  /*Espace entre les boutons*/
+  gap : 20px;
+
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text"
+      "buttons";
+  }
 }
 
 
 /* Portfolio Header */
 
 #portfolio-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  display: block;
 }
 
 #portfolio-header-image-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* réduire légèrement la place de l'image pour laisser plus au texte */
-  flex-basis: 35%;
+  display: none;
 }
 
 .portfolio-header-image {
@@ -95,7 +118,7 @@ body {
 #about-section {
   /*display: flex;*/
   flex-direction: column;
-  gap: 16px;
+  gap: 30px;
 
   border: 1.5px solid black; /* ajouter une bordure de 2px de couleur noire */
   padding: 30px; /* ajouter une marge intérieure de 10px pour espacer les images du bord de la bordure */
@@ -117,6 +140,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-top : 30px;
 }
 
 .projects-container {
