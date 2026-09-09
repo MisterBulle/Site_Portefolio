@@ -33,6 +33,8 @@ body {
 }
 
 
+/*Partie intro */
+
 .intro-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -86,6 +88,64 @@ body {
   }
 }
 
+
+/*Projet Tabs*/
+
+.container_Tabs {
+  /*Avant c'était 50 %*/
+  width : 100%;
+  height : 20%;
+  display : flex;
+  position : relative;
+
+  /*justify-content : center;*/
+  /*padding : 10px;*/
+}
+
+input {
+  display : none;
+}
+
+input [type="radio"] {
+  display : none;
+}
+
+.tab-name {
+  height : 45px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  cursor : pointer;
+  text-decoration : underline;
+  font-weight : bold;
+}
+input:checked + label .tab-name {
+  background : rgb(204, 224, 122);
+  color : black;
+}
+
+.tab-contenu {
+  position : absolute;
+  top : 120%;
+  left : 0;
+  
+  
+  padding : 20px;
+  border : 1px solid black;
+  box-sizing : border-box;
+  border-radius : 5px;
+  opacity : 0;
+  z-index : 0;
+}
+
+input:checked + label .tab-contenu {
+  opacity : 1;
+  z-index : 1;
+  background : #F0F8FF;
+  /*background : white;
+  color : black;
+  border : 1px solid black;
+  border-top : none;*/
+}
 
 /* Portfolio Header */
 
