@@ -29,7 +29,7 @@ body {
   padding: 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 50px;
 }
 
 
@@ -258,10 +258,11 @@ input:checked + label .tab-contenu {
 #project-details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 
   border: 2px solid black; /* ajouter une bordure de 2px de couleur noire */
-  padding: 30px; /* ajouter une marge intérieure de 10px pour espacer les images du bord de la bordure */
+  padding: 30px; 
+  /* ajouter une marge inférieure de 10px pour espacer les images du bord de la bordure */
 
   
 }
