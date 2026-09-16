@@ -43,57 +43,66 @@
 
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
+            <div class="intro-grid">
 
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
-          <img src="./assets/images/Photo CV.jpg" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+              <div class="image">
+                  <img src="./assets/images/Photo CV.jpg" class="portfolio-header-image">
+                  <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
             <span class="image-caption"></span>
           </a>
-        </div>
+              </div>
 
-          <!-- 
-            TODO
-
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
-        <div id="portfolio-header-text-container">
-            <!-- Avant c'était header-text-->
-            <div class="container">
-              <span class="main-title">Bonjour, je m'appelle PAUVERT Loïc </span> 
-              <div class="body-text">
+              <div class="text">
+                  <span class="main-title">Bonjour, je m'appelle PAUVERT Loïc </span>
+                   <div class="body-text">
                <br> 
-              Je suis un programmeur UNITY de jeu vidéo et jeu sérieux accompli. Ayant participé à nombres de projets 2D et 3D au fil de mes années d'études.
-              Ces derniers ont permis de développer mes compétences en programmation et en travail d'équipe.
-                <br> <br>
-              En parallèle, je pratique la modélisation 3D sur Blender. J'ai appris ce dernier en autodidacte et j'ai pu créer des objets divers que j'ai pu utiliser dans différents projets.
-              Notamment dans des stages ou des projets de groupe.
-              <br> <br>
+               <li>
+               Je suis principalement <b>programmeur Unity </b> spécialisé dans le <b>jeu vidéo </b> et <b>le jeu sérieux </b>. 
+               Au cours de mes années d'études, j'ai participé à de nombreux projets en 2D, 3D et VR, ce qui m'a permis de développer mes compétences en programmation ainsi que ma capacité à travailler en équipe. <br>
+               J'ai également eu l'occasion de collaborer avec des entreprises reconnues telles que <b>Safran </b> et <b>Yacht Concept </b>, dans le cadre de stages et de projets de groupe.
+                  <br> <br>
+                </li>
 
-              Enfin, j'ai des connaissances dans le domaine de la programmation OOP (C++), la création de sites Web plus ou moins complexes avec l'utilisation de frameworks (React, NextJS) et la manipulation de bases de données (MySQL, MongoDB, Redis)
+              <li>
+                En parallèle de la programmation, je pratique la <b>modélisation 3D sur Blender</b>, que j'ai appris en autodidacte. J'ai ainsi pu concevoir différents objets et modèles 3D, que j'ai ensuite intégrés à plusieurs projets, notamment lors de mon stage chez <b>Yacht Concept </b>, dans le cadre de projets de groupe ou encore dans mes projets personnels.
+                <br> <br>
+              </li>
+
+                <li>
+                  Je possède également des connaissances en <b>programmation orientée objet (C++)</b>, en développement <b>web</b> avec des frameworks tels que <b>React</b> et <b>Next.js</b>, ainsi qu'en gestion et manipulation de bases de données, notamment avec <b>MySQL, MongoDB</b> et <b>Redis.</b>                
+                </li>
+                  </div> 
+              </div>
+
+              <div class="buttons">
+
+                <a class="button" href="./assets/CV/CV_Programmeur_2026.pdf" target="_blank">
+                  <span class="button-text"> Voir mon CV</span>
+                </a>
+                <a class="button" href="./project-pages/Competences_Parcours.html">
+                  <span class="button-text">Mes compétences</span>
+                </a>
+                <a class="button" href="mailto:loicpauvert47@gmail.com">
+                  <span class="button-text">Me contacter</span>
+                </a>
+
+                <!-- Logo contacts -->
+
+                <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/loic-pauvert/">
+                <image src="./assets/icons/LinkedInLogo.png" class="footer-icon"/>
+                </a>
+                  
+                <a class="icon-link" target="_blank" href="https://github.com/MisterBulle">
+                <image id="github_image" src="./assets/icons/github.png" class="footer-icon"/>
+                </a>
+     
+                <a class="icon-link" href="mailto:loicpauvert47@gmail.com">
+                <image src="./assets/icons/mail.svg" class="footer-icon"/>
+                </a>
+
               </div>
             </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">Mes projets</span> 
-              <image src="./assets/icons/ArrowDown.png" width="20" />
-            </a>
-            <a class="button" href="./project-pages/Competences_Parcours.html">
-              <span class="button-text">Mon parcours / Mes compétences</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-            <a class="button" href="./assets/CV/CV_Programmeur_2026.pdf" target="_blank" rel="noopener noreferrer">
-              <span class="button-text">Voir mon CV</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-        </div>
-      </div>
+        
 
       <!-- ABOUT SECTION -->
       <!-- 
@@ -102,67 +111,63 @@
         - Change the subheader-text to whatever header you want
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
-      <div id="about-section">
-        <span class="subheader-text">A propos de moi</span>
-        <div class="about-section-content">
-          <div class="body-text">
-            Ancien diplomé du BUT Informatique option graphique du Puy-en-Velay : je mets à profil mes connaissances que j'ai apprise dans le domaine du jeu vidéo et de la modélisation 3D.
-          </div>
-          <div class="body-text">
-            C'est dans ce dernier que je veux travailler; me permettant d'utiliser mon imagination et mon expérience pour créer des univers riches et mémorables.
-            Me permettant de m'exprimer sur des sujets qui me tiennent à coeur et de pouvoir travailler avec des personnes qualifiées.
-          </div>
-        </div>
-      </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
         <span class="subheader-text"> <u> Mes projets </u></span>
+        <p> Cliquez sur les boutons (carrés jaunes) ci-dessous pour passer d'une catégorie de projets à l'autre <br>
+          Les projets sont rangés du plus récent au plus ancien.
 
-        <span class="subheader-text"> Modélisation 3D </span>
+        </p>
 
-        <div class="projects-container">
-          <!-- 
-            TODO
 
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
+        <div class="container_Tabs">
+          <input type="radio" name="option" id="1" checked />
+          <label for="1">
+            <div class="tab-name">Modélisation 3D</div>
+            <div class="tab-contenu">
+              
+            <div class="projects-container">
+          <!-- BLENDER -->
           <div class="project-card">
             <img src="./assets/images/donut_final.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Modélisation objets 3D - Blender</div>
-              <div class="body-text project-card-text">Créations d'objets divers et variés fait sur Blender en auto-apprentissage. Chaque création a été faite via une technique différente.</div>
+              <div class="subheader-text project-title">Création d'assets 3D pour un FPS Dungeon FPS</div>
+              <div class="subheader-text project-title">2026</div>
+              <div class="body-text-b project-card-text">
+                Créations d'objets divers et variés sur Blender pour le jeu vidéo 3D FPS <i>Dungeon FPS</i> développé sous Unity<br> <br> </div>
             </div>
-            <a class="button" href="./project-pages/project_Blender.html">
+            <a class="button" href="./project-pages/project_Dungeon_FPS.html">
               <span class="button-text">En savoir plus</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
+
           <div class="project-card">
-            <img src="./assets/images/CRANEFINAL.PNG" class="project-image">
+            <img src="./assets/images/donut_final.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Modélisation 3D d'oeuvres d'arts</div>
-              <div class="body-text project-card-text">Élaboration d'oeuvres d'art existantes divers et variées sur 3DS Max. Chaque création a nécessité une technique particulière</div>
+              <div class="subheader-text project-title"> Le vase de la lionne</div>
+              <div class="subheader-text project-title">2026</div>
+              <div class="body-text-b project-card-text">
+                Création d'un vase en 3D sur Blender et d'un tholos pour une visite en VR dans un musée
+              </div>
             </div>
-            <a class="button" href="./project-pages/project_3DS_Max.html">
+            <a class="button" href="./project-pages/project_Vase_de_la_Lionne.html">
+              <span class="button-text">En savoir plus</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/donut_final.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">ZELDA</div>
+              <div class="subheader-text project-title">2024</div>
+              <div class="body-text-b project-card-text">
+                Créations d'objets divers et variés fait sur Blender pendant mes premières années de modélisation 3D <br> <br> </div>
+            </div>
+            <a class="button" href="./project-pages/project_Blender.html">
               <span class="button-text">En savoir plus</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -171,24 +176,131 @@
           <div class="project-card">
             <img src="./assets/images/DDBR_IMAGE1_SANS_NEF_2706.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Modélisation 3D du navire "Bonhomme Richard"</div>
-              <div class="body-text project-card-text">Projet effectué durant un stage de 3 mois dans l'entreprise "Yacht Concept". Création d'un navire virtuel et d'une scène sur et grâce au logiciel Blender</div>
+              <div class="subheader-text project-title">Navire <i> Bonhomme Richard </i> en 3D</div>
+              <div class="subheader-text project-title">2023</div>
+              <div class="body-text-b project-card-text">
+                Création d'un navire virtuel et d'une scène sur et grâce au logiciel Blender en s'appuyant sur des plans de l'époque.
+                Projet effectué d'un un stage de 3 mois dans l'entreprise "Yacht Concept". 
+              </div>
             </div>
             <a class="button" href="./project-pages/Stage_YachtConcept.html">
               <span class="button-text">En savoir plus</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-        </div>
-        
-      <br>
-      <span class="subheader-text"> Programmation </span>
 
-      <div class="projects-container">
+          <div class="project-card">
+            <img src="./assets/images/donut_final.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Objets divers - Blender</div>
+              <div class="subheader-text project-title">2022</div>
+              <div class="body-text-b project-card-text">Créations d'objets divers et variés fait sur Blender pendant mes premières années de modélisation 3D <br> <br> </div>
+            </div>
+            <a class="button" href="./project-pages/project_Blender.html">
+              <span class="button-text">En savoir plus</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/CRANEFINAL.PNG" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Création 3D d'oeuvres d'arts</div>
+              <div class="subheader-text project-title">2022</div>
+              <div class="body-text-b project-card-text">
+                Reproduction d'oeuvres d'arts existantes en 3D sur 3DS Max. Chaque technique a requis une technique particulière.
+              </div>
+            </div>
+            <a class="button" href="./project-pages/project_3DS_Max.html">
+              <span class="button-text">En savoir plus</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+
+        </div>
+
+            </div>
+          </label>
+
+          <!-- JEU VIDEO -->
+          <input type="radio" name="option" id="2" />
+          <label for="2">
+            <div class="tab-name">Jeu Vidéo</div>
+            <div class="tab-contenu">
+              <div class="projects-container">
+        <div class="project-card">
+            <img src="./assets/images/SalleSpooky.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Dungeon FPS </div>
+              <div class="subheader-text project-title">2026</div>
+              <div class="body-text project-card-text">
+                Jeu vidéo FPS développé en solo sur Unity pendant une période de plusieurs mois.
+              </div>
+            </div>
+            <a class="button" href="./project-pages/project_Dungeon_FPS_Projet.html">
+              <span class="button-text">En savoir plus</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+        <div class="project-card">
+              <div class="project-card-text-container">
+                <img src="./assets/images/Planet_Racer_Pro_Title_2.PNG" class="project-image">
+                <div class="subheader-text project-title"> KEYSARD </div>
+                <div class="subheader-text project-title">2026</div>
+                <div class="body-text-b project-card-text"> 2 mois 6 personnes </div>
+              </div>
+              <a class="button" href="./project-pages/project_Keysard.html">
+                <span class="button-text">En savoir plus</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+        </div>
+
+          <div class="project-card">
+              <div class="project-card-text-container">
+                <img src="./assets/images/Planet_Racer_Pro_Title_2.PNG" class="project-image">
+                <div class="subheader-text project-title"> Global Game Jam - Démasqué </div>
+                <div class="subheader-text project-title">2025</div>
+                <div class="body-text-b project-card-text"> 6 personnes 48 heures </div>
+              </div>
+              <a class="button" href="./project-pages/project_PlanetRacerPro.html">
+                <span class="button-text">En savoir plus</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+          </div>
+
+          <div class="project-card">
+              <div class="project-card-text-container">
+                <img src="./assets/images/Planet_Racer_Pro_Title_2.PNG" class="project-image">
+                <div class="subheader-text project-title"> Hydroliaz Station </div>
+                <div class="subheader-text project-title">2025</div>
+                <div class="body-text-b project-card-text"> Projet e-learning</div>
+              </div>
+              <a class="button" href="./project-pages/project_PlanetRacerPro.html">
+                <span class="button-text">En savoir plus</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+          </div>
+
+          <div class="project-card">
+              <div class="project-card-text-container">
+                <img src="./assets/images/Planet_Racer_Pro_Title_2.PNG" class="project-image">
+                <div class="subheader-text project-title"> Planet Racer Pro </div>
+                <div class="subheader-text project-title">2024</div>
+                <div class="body-text-b project-card-text">Création d'un jeu de course d'arcade vue du dessus sous le moteur Unity. Créer en groupe de 3 pendant une période de plusieurs semaines</div>
+              </div>
+              <a class="button" href="./project-pages/project_PlanetRacerPro.html">
+                <span class="button-text">En savoir plus</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+          </div>
+
         <div class="project-card">
             <img src="./assets/images/SalleSpooky.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Escape Le Puy - The Nightmare </div>
+              <div class="subheader-text project-title">2023</div>
               <div class="body-text project-card-text">
                 Jeu vidéo VR d'énigmes coopérative d'horreur crée sur Unreal Engine 5 
                 avec une équipe de 5 personnes pendant une durée de plusieurs mois.</div>
@@ -203,7 +315,7 @@
             <img src="./assets/images/BEBOU_REMI.PNG" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Hackaton numérique responsable</div>
-              <div class="body-text project-card-text">Hackaton numérique responsable fait en groupe de 4-5 pendant une journée entière.</div>
+              <div class="body-text-b project-card-text">Hackaton numérique responsable fait en groupe de 4-5 pendant une journée entière.</div>
             </div>
             <a class="button" href="./project-pages/project_NumériquesResponsables.html">
               <span class="button-text">En savoir plus</span>
@@ -216,29 +328,19 @@
             <div class="project-card-text-container">
               <img src="./assets/images/horreur.png" class="project-image">
               <div class="subheader-text project-title"> Jeu vidéo VR horrifique sous Unity </div>
-              <div class="body-text project-card-text">Création d'un jeu d'horreur sous-maritime via Unity dans un groupe de 4-5 personnes. Ce titre a été crée en moins d'une semaine.</div>
+              <div class="body-text-b project-card-text">Création d'un jeu d'horreur sous-maritime via Unity dans un groupe de 4-5 personnes. Ce titre a été crée en moins d'une semaine.</div>
             </div>
             <a class="button" href="./project-pages/project_VR_Horreur_Sous_Marin.html">
               <span class="button-text">En savoir plus</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-          </div>
+          </div>          
 
-          <div class="project-card">
-              <div class="project-card-text-container">
-                <img src="./assets/images/Planet_Racer_Pro_Title_2.PNG" class="project-image">
-                <div class="subheader-text project-title"> Planet Racer Pro </div>
-                <div class="body-text project-card-text">Création d'un jeu de course d'arcade vu du dessus sous le moteur Unity, fait en groupe de 3 pendant une période de plusieurs semaines</div>
-              </div>
-              <a class="button" href="./project-pages/project_PlanetRacerPro.html">
-                <span class="button-text">En savoir plus</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-
-          </div>
         </div>
-
-
+              </div>
+          </label>
+          <!--Fin du div Container Labs --->
+        </div>
       </div>
     </div>
 
@@ -251,25 +353,6 @@
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/loic-pauvert/">
-        <image src="./assets/icons/LinkedInLogo.png" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://github.com/MisterBulle">
-        <image id="github_image" src="./assets/icons/github.png" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:loicpauvert47@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
     </div>
 
 	</body>

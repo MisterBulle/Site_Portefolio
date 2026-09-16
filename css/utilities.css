@@ -37,6 +37,20 @@ a.icon-link:hover {
   left: 0;
 }
 
+.navbar-spacer {
+  width: 100%;
+  display : flex;
+  justify-content : right;
+  padding: 30px;
+}
+
+.navbar-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
 .nav-title-link {
   color: black;
   text-decoration: none;

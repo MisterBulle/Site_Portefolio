@@ -1,0 +1,163 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Dungeon FPS</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Retour menu principal</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:loicpauvert47@gmail.com">
+          <span class="button-text">Me contacter</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Création d'assets 3D pour le FPS <i>Dungeon FPS</i></div>
+        <div class="body-text">
+          Création d'assets 3D sur Blender pour le jeu vidéo FPS <i>Dungeon FPS</i>sur Unity programmé par moi-même.
+        </div>
+        <image class="project-header-image" src="../assets/images/horreur.png">
+          <I></I>
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+
+      <div id="project-details">
+      <div class="subheader-text">Détails du projet</div>
+      <div class="project-details-content">
+          <div class="body-text"> 
+            Lors de la création d'un jeu vidéo FPS sous Unity, de nombreux assets étaient attendus, <br>
+            Je les ai créés sous Blender. Ces derniers sont : armes à feu, boite de premiers secours et de munitions et divers éléments de structure. <br> <br>
+              Pour "habiller" mes objets j'ai utilisé pour la majorité des <b>textures PBR</b> : certaines venant de ressources disponibles en ligne. 
+              D'autres ont été crées, générées et contrôlées directement dans Blender avec le système de <b>Shader editeur</b>. <br> <br>
+              Dans un second temps ces textures ont été traduits en images PBR pour pouvoir les utiliser dans Unity (ce dernier ne pouvont recevoir les connexions du shader editor).
+          </div>
+          <a class="button" href="https://github.com/MisterBulle/Dungeons_FPS">
+            <span class="button-text">Lien Github du projet</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Contexte</div>
+        <div class="project-details-content">
+          <div class="body-text"> 
+              Lors de ma première année de Master AMINJ, il nous a été demandé de concevoir un jeu vidéo 3D sous Unity, réalisé individuellement. <br> <br>
+              On devait créer nous-mêmes les assets 3D aux projets sur 3D.
+              <br>
+              Certains étaient imposés comme de nombreuses structures : murs, sols, piliers et fenêtres.
+              <br>
+              D'autres étaient attendus suivant le choix du jeu et de son univers.
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Technologies et outils utilisées</div>
+        <div class="project-details-content">
+          <div class="body-text"> 
+            <ul>
+              <li><b>Blender</b> : modélisation 3D</li>
+              <li><b>Textures PBR</b> : Pour obtenir des résultats plus complexes et intéressants.</li>
+              <li><b>Shader Editor</b> : Création de matériaux procéduraux et des images PBR.</li>
+              <li><b>Mio3 UV / LoopTools / NodeWrangler</b> : Add-on pour le UV mapping, le sculpting et la gestion des nodes dans le shader Editor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details"> <!-- CONCLUSION -->
+        <div class="subheader-text"> Conclusion : </div>
+        <div class="project-details-content">
+          <div class="body-text"> 
+            Ce projet demandait la création d'un grand nombre d'assets dans un temps limité. L'un des principaux défis a donc été de maintenir un niveau de détail et de finition cohérent entre chaque élément.
+            <br> <br>
+            La majorité des objets étant réalisés en Hard Surface, ce projet m'a permis de pratiquer et d'approfondir cette technique de modélisation. <br> <br>
+            La création et l'utilisation d'un grand nombre de textures PBR m'ont permis de mieux comprendre leur fonctionnement et de gagner en aisance dans leur manipulation et leur intégration dans Blender.
+            <br> <br>
+            La conception de textures PBR procédurales m'a également permis d'approfondir ma compréhension du système de nodes de Blender. <br>
+            Ces connaissances me permettront de créer mes propres matériaux PBR procéduraux et de les manipuler de manière efficace dans mes futurs projets.
+            </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/loic-pauvert/">
+        <image src="../assets/icons/LinkedInLogo.png" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://github.com/MisterBulle">
+        <image id="github_image" src="../assets/icons/github.png" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:loicpauvert47@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

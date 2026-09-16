@@ -1,0 +1,205 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>PAUVERT Loïc </title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Retour menu principal</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:loicpauvert47@gmail.com">
+          <span class="button-text">Me Contacter</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Vase de la lionne</div>
+        <div class="body-text"> 
+          Création d'un vase en 3D <i>Le vase de la lionne</i> et d'un tholos d'après des plans de l'époque. Ces deux derniers ont ensuite été intégré dans un environnement 3D pour une visite virtuelle.
+        </div>
+
+        <div class="video-responsive">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=JMdfzZkTVFw" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+      </div>
+      <p> Lien de la vidéo : https://www.youtube.com/watch?v=JMdfzZkTVFw</p>
+        <!--
+        <image class="project-header-image" src="../assets/images/donut_final.png">
+        -->
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+
+      <div id="project-details">
+        <div class="subheader-text">Détail du projet</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            Reconstitution 3D du <i>vase de la lionne </i> datant du VIème siècle avant JC : du site de fouille où il a été retrouvé et de l'environnement où il a vécu.
+            L'objectif est une visite virtuelle en VR auquel l'utilisateur peut découvrir ces deux environnements et s'instruire via un guide audio.
+            Ces deux environnements ont été modélisés en 3D soit par les soins de l'équipe soit via l'utilisation d'assets.
+            Le joueur commence dans le site de fouille : il trouve les morceaux du vase il les combine pour être téléporté dans l'environnement du 6ème siècle pour découvrir une version construite du vase dans le tholos.
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Contexte</div>
+        <div class="project-details-content">
+          <div class="body-text">
+          Projet réalisé en groupe de 3 sur une durée de 3 semaines, durant ma première année de Master AMINJ, en collaboration avec un client. <br>
+          L'objectif était de valoriser la découverte du <i>Vase de la Lionne</i>, son site archéologique et son contexte historique à travers une expérience immersive en VR. <br>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details"> <!-- CONTEXTE -->
+        <div class="subheader-text"> Mon rôle </div>
+        <div class="project-details-content">
+          <div class="body-text"> 
+          Modélisateur 3D principal. <br>
+          <ul>
+            <li> Modélisation du <i>Vase de la Lionne</i> à partir de photographies et de reconstitutions.</li>
+            <li>Modélisation du tholos, lieu associé à la découverte du vase.</li>
+            <li>Création de texture PBR des briques du tholos procédurales avec le système de shader</li>
+            <li>Création de textures PBR pour Unity : création des six maps (Base Color, Height, Metallic, Roughness, Normal et AO) à partir des textures générées dans le Shader Editor de Blender, afin de les intégrer et les exploiter dans Unity. </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details"> <!-- CONTEXTE -->
+        <div class="subheader-text">Technologies et outils utilisées </div>
+        <div class="project-details-content">
+          <div class="body-text"> 
+          <ul>
+            <li><b>Blender </b>: Modélisation 3D</li>
+            <li><b>Modificateur Array + curve </b>: Création des briques du tholos et leurs alignements</li>
+            <li><b>Shader editor</b> : Création de textures procédurales et d'images PBR</li>
+            
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div id="project-details"> <!-- CONTEXTE -->
+        <div class="subheader-text"> Conclusion </div>
+        <div class="project-details-content">
+          <div class="body-text"> 
+            Ce projet m'a permis d'expérimenter différentes approches de modélisation et de texturing 3D, tout en développant mon expérience en relation client. <br>
+            De nouvelles notions qui me seront utiles dans mes futurs projets.
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Galerie d'image</div>
+        <div class="project-gallery-content">
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/ATOM.PNG" class="gallery-image">
+              <span class="image-caption">Machine complexe crée pour le jeu Escape Le Puy - The Nightmare. Cet objet contient des textures crées par mes soins.
+                Ceci est l'une de mes créations originales : crée à partir d'un mélange de plusieurs images trouvés.
+                L'ojectif était d'avoir une machine volumineuse, lourde et impressionnante.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/CarModelingV.png" class="gallery-image">
+              <span class="image-caption">Voiture crée via un tutoriel. Cet objet a été conçu d'après des blueprints (plan du véhicule).
+                Ce plan était à l'echelle du véhicule et contenait chaques côtés de l'engin : pratique pour avoir les bonnes dimensions lors de la modélisation.
+              </span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/donut_final.png" class="gallery-image">
+              <span class="image-caption">Donut crée d'après un tutoriel. Cet objet ontient plusieurs techniques plus ou moins complexes tel que la gestion 
+                de la lumière et du rendu. 
+                Le donut à été l'un des premiers objet crée via Blender et à était ma porte d'entrée dans cette univers.
+                J'ai refait plusieurs fois ce tutoriel dont vous voyez la dernière version que j'ai fait.
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/loic-pauvert/">
+        <image src="../assets/icons/LinkedInLogo.png" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://github.com/MisterBulle">
+        <image id="github_image" src="../assets/icons/github.png" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:loicpauvert47@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

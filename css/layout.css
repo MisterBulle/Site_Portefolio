@@ -29,49 +29,132 @@ body {
   padding: 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 50px;
 }
 
 
-.container {
-  display : grid;
-  /*On a deux colonnes*/
-  grid-template-columns : auto auto;
-  /*grid-template-rows : auto;*/
-  grid-template-areas : "image text buttons";
+/*Partie intro */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "image text"
+    "buttons buttons";
+  
+  padding-bottom: 30px;
+
 }
 
-.container div.image {
+.intro-grid > .image {
   grid-area : image;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.container div.text {
+.intro-grid > .image .portfolio-header-image {
+  width: min(100%, 350px);
+}
+
+.intro-grid > .text {
   grid-area : text;
-  text-align : center;
+  /*Ajout de chat*/
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  justify-content: center;
 }
 
-.container div.buttons {
+.intro-grid > .buttons {
   grid-area : buttons;
   display : flex;
   justify-content : center;
-  gap : 5%;
+  align-items: center;
+  /*Espace entre les boutons*/
+  gap : 20px;
+
+  flex-wrap: wrap;
+  padding-top: 50px;
 }
 
+@media only screen and (max-width: 800px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text"
+      "buttons";
+  }
+}
+
+
+/*Projet Tabs*/
+
+.container_Tabs {
+  /*Avant c'était 50 %*/
+  width : 100%;
+  height : 20%;
+  display : flex;
+  position : relative;
+
+  /*justify-content : center;*/
+  /*padding : 10px;*/
+}
+
+input {
+  display : none;
+}
+
+input [type="radio"] {
+  display : none;
+}
+
+.tab-name {
+  height : 45px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  cursor : pointer;
+  text-decoration : underline;
+  font-weight : bold;
+}
+input:checked + label .tab-name {
+  background : rgb(204, 224, 122);
+  color : black;
+}
+
+.tab-contenu {
+  position : absolute;
+  top : 120%;
+  left : 0;
+  
+  
+  padding : 20px;
+  border : 1px solid black;
+  box-sizing : border-box;
+  border-radius : 5px;
+  opacity : 0;
+  z-index : 0;
+}
+
+input:checked + label .tab-contenu {
+  opacity : 1;
+  z-index : 1;
+  background : #F0F8FF;
+  /*background : white;
+  color : black;
+  border : 1px solid black;
+  border-top : none;*/
+}
 
 /* Portfolio Header */
 
 #portfolio-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  display: block;
 }
 
 #portfolio-header-image-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* réduire légèrement la place de l'image pour laisser plus au texte */
-  flex-basis: 35%;
+  display: none;
 }
 
 .portfolio-header-image {
@@ -95,7 +178,7 @@ body {
 #about-section {
   /*display: flex;*/
   flex-direction: column;
-  gap: 16px;
+  gap: 30px;
 
   border: 1.5px solid black; /* ajouter une bordure de 2px de couleur noire */
   padding: 30px; /* ajouter une marge intérieure de 10px pour espacer les images du bord de la bordure */
@@ -117,6 +200,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-top : 30px;
 }
 
 .projects-container {
@@ -174,10 +258,11 @@ body {
 #project-details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 
   border: 2px solid black; /* ajouter une bordure de 2px de couleur noire */
-  padding: 30px; /* ajouter une marge intérieure de 10px pour espacer les images du bord de la bordure */
+  padding: 30px; 
+  /* ajouter une marge inférieure de 10px pour espacer les images du bord de la bordure */
 
   
 }
