@@ -252,6 +252,7 @@ input:checked + label .tab-contenu {
   gap: 16px;
 }
 
+
 .project-header-image {
   width: 100%;
   height: auto;
