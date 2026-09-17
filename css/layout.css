@@ -78,6 +78,14 @@ body {
   padding-top: 50px;
 }
 
+.buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 800px) {
   .intro-grid {
     grid-template-columns: 1fr;
@@ -301,7 +309,8 @@ input:checked + label .tab-contenu {
 
     .gallery-image {
       width: 100%;
-      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
     }
 
 
